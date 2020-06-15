@@ -1,1 +1,1 @@
-# FIST: Fast Imputation of Spatial Gene Expressio Tensor
+# FIST: Fast Imputation of Spatial Gene Expression Tensor
