@@ -5,7 +5,7 @@ In this repo, we provide the MATLAB implementation of FIST algorithm:
 - **cross_validation.m**: script for comparing FIST and spatialNN by doing cross-validation on the mouse kidney section dataset
 - **HDST_main.m**: measure the time of running FIST on the hdst CN24_E1 dataset
 - **FIST.m:** function of the FIST algorithm
-- **spatialNN.m**: an imputation approach based searching the spatially nearest spots
+- **spatialNN.m**: an imputation approach based on searching the spatially nearest spots
 - **get_rank.m:** determine the tensor CPD-rank by PCA
 - **scatter_plot.m**: generate the scatter plot of the cross-validation results
 
