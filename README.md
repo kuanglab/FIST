@@ -1,4 +1,4 @@
 # FIST: Fast Imputation of Spatially-resolved transcriptomes by graph-regularized Tensor completion
-## Summary of the package
-In this repo, we provide the MATLAB implementation of FIST algorithm
+## Dataset
+Dataset used in the paper can be download [here](http://compbio.cs.umn.edu/FIST_data.tgz).
 
