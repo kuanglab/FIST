@@ -24,9 +24,9 @@ for nameid = 1:10
         train_val_fold = setdiff([1:5],test_fold);
         train_fold = train_val_fold(1:3);
         val_fold = train_val_fold(end);
-        train_indices = indices(ismember(indices,train_fold));
-        valid_indices = indices(indices == val_fold);
-        test_indices = indices(indices == test_fold);
+        train_indices = find(ismember(indices,train_fold));
+        valid_indices = find(indices == val_fold);
+        test_indices = find(indices == test_fold);
 
         [A_bag,m,ind_bag] = train_valid_FIST(lambdavec,T_ori,train_indices,valid_indices,n,W,opts);   
 
