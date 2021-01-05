@@ -4,7 +4,7 @@ opts.stopcrit = 10^-4;
 opts.MaxIters = 500;
 opts.dense_mod = 1; % use dense implementation of FIST if the data is NOT sparse
 
-work_path = 'yourpath/FIST-master';
+work_path = 'yourpath/FIST_data';
 data_path = 'Replicates_data/';
 utils_path ='FIST_utils/';
 res_path = '../FIST_res/fiber_wise_replicates/';
