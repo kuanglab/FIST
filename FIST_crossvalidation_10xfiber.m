@@ -5,7 +5,7 @@ opts.MaxIters = 500;
 opts.dense_mod = 1; % use dense implementation of FIST if the data is NOT sparse
 
 data_bag = {'HBA1','HBA2','HH','HLN','MKC','MBC','MB1P','MB2P','MB1A','MB2A'};
-work_path = 'yourpath/FIST-master';
+work_path = 'yourpath/FIST_data';
 data_path = '10x_data/';
 utils_path = 'FIST_utils/';
 res_path = '../FIST_res/fiber_wise_10x/';
