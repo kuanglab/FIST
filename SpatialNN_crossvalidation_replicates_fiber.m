@@ -1,6 +1,6 @@
 clear all;clc
 data_bag = {'Replicate 1','Replicate 2','Replicate 3'};
-work_path = 'yourpath/FIST-master';
+work_path = 'yourpath/FIST_data';
 data_path = 'Replicates_data/';
 utils_path = 'FIST_utils/';
 res_path = '../SpatialNN_res/fiber_wise_replicates/';
