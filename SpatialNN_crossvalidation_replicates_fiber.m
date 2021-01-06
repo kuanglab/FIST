@@ -12,6 +12,7 @@ for nameid = 1:3
     %% 5-fold cross-validation on spot fibers
     Z = collapse(V,3);
     for fold = 1:5
+        rng('default');
         indices = crossvalind('Kfold',ones(size(Z.subs,1),1),5); 
         test_idx = find(indices==fold);
         test_subs = Z.subs(test_idx,:);
