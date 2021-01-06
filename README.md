@@ -23,9 +23,11 @@ Rscript Convert2Tensor_ST.R --input <input_folder> --output <output_folder>
 Next, open MATLAB and `cd` to the `FIST_utils` folder, load the `.mat` file output by the `Rscript` command in the previous step, and run `V = sptensor([V.x_aligned_coords V.y_aligned_coords V.variable], V.value, [double(X) double(Y) double(Z)]);` to generate the data tensor.
 
 #### Step 2: Run cross-validations on the spot fibers or gene slices of the processed tensors
-- **Spot-wise cross-validation on the 10 tissue tensors from 10x Genomics:** 
-
-#### Step 3: Plot the results
+- **Spot-wise cross-validation on the 10x Genomics data:**  Run `FIST_crossvalidation_10xfiber.m` and `SpatialNN_crossvalidation_10xfiber.m` to test FIST and the baseline Spatial-NN respectively.
+- **Gene-wise cross-validation on the 10x Genomics data:**  Run `FIST_crossvalidation_10xslice.m` and `SpatialNN_crossvalidation_10xslice.m` to test FIST and the baseline Spatial-NN respectively. 
+- **Spot-wise cross-validation on the mouse tissue replicates data:**  Run `FIST_crossvalidation_replicates_fiber.m` and `SpatialNN_crossvalidation_replicates_fiber.m` to test FIST and the baseline Spatial-NN respectively.
+#### Step 3: Display the results
+Run `plot_Figure2.m`, `plot_Figure3.m`, `plot_Figure4.m`, `plot_Figure8.m`, `plot_Figure9.m`, `plot_FigureS123.m` and `generate_S2_Table.m` to display the key results in Figures 2, 3, 4, 8, 9, S1, S2, S3, and Table S2 in the paper.
 
 
 
