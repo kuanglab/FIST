@@ -17,6 +17,7 @@ for nameid = 1:10
     [T_ori,W,n] = data_prep_10x_slice(data_name, data_path, utils_path); 
     %% 5-fold cross-validation on each gene slice
     subs = T_ori.subs;
+    rng(0);
     indices = crossvalind('Kfold',subs(:,3),5);% 5-fold cross validation
 
     for test_fold = 1:5
