@@ -11,7 +11,7 @@ The folders (10x_data, Replicates_data, FIST_utils, FIST_res, SpatialNN_res, REM
 ### Utility files
 - **`FIST_utils`:** The utility files required for running FIST, which includes 1) the main function `FIST.m`; 2) the supporting functions `train_valid_FIST.m` and `test_FIST.m` for the gene-wise cross-validation on 10x Genomics datasets; 3) all the files in the [MATLAB Tensor Toolbox](https://gitlab.com/tensors/tensor_toolbox) package.
 ### Results
-1) The cross-validation results for FIST are stored in `FIST_res`; 2) The cross-validation results for the baseline methods [REMAP](https://github.com/hansaimlim/REMAP), [GWNMF](https://locus.siam.org/doi/pdf/10.1137/1.9781611972801.18), [ZIFA](https://github.com/epierson9/ZIFA) and Sptial-NN are stored in `REMAP_res`, `GWNMF_res`, `ZIFA_res` and `SpatialNN_res`. (Note: Spatial-NN is a baseline method created by ourserlves whose implementation is provided in this repo as described in the "Script files" section .)
+The cross-validation results for FIST are stored in `FIST_res`. The cross-validation results for the baseline methods [REMAP](https://github.com/hansaimlim/REMAP), [GWNMF](https://locus.siam.org/doi/pdf/10.1137/1.9781611972801.18), [ZIFA](https://github.com/epierson9/ZIFA) and Sptial-NN are stored in `REMAP_res`, `GWNMF_res`, `ZIFA_res` and `SpatialNN_res`. (Note: Spatial-NN is a baseline method created by ourserlves whose implementation is provided in this repo as described in the "Script files" section .)
 
 ## Script files 
 
