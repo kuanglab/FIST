@@ -1,7 +1,7 @@
 
 % V: data tensor 
 % W: spatial chain graphs and PPI network
-% n: tensor dimensions
+% rank_k: CPD rank
 function [V,W,rank_k] = data_prep_10x_fiber(dataName, data_path, utils_path)
 
 % load data tensor
