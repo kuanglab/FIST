@@ -52,8 +52,12 @@ for nameid = 1:10
             r2vec(i) = r2_;     
 
         end
+        maeres{1} = maevec;
+        maperes{1} = mapevec;
+        r2res{1} = r2vec;
+        
         name=[res_path,'Spatial1NN_10xslice_',data_bag{nameid},'_fold',num2str(test_fold),'.mat'];
-        save(name,'maevec','mapevec','r2vec','-v7.3'); 
+        save(name, 'maeres','maperes','r2res','-v7.3'); 
     end
    
 end
