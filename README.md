@@ -13,5 +13,6 @@ The folders (10x_data, Replicates_data, FIST_utils, FIST_res, SpatialNN_res, REM
 #### Results
 The cross-validation results for FIST are stored in `FIST_res`. The cross-validation results for the baseline methods [REMAP](https://github.com/hansaimlim/REMAP), [GWNMF](https://locus.siam.org/doi/pdf/10.1137/1.9781611972801.18), [ZIFA](https://github.com/epierson9/ZIFA) and Sptial-NN are stored in `REMAP_res`, `GWNMF_res`, `ZIFA_res` and `SpatialNN_res`. (Note: Spatial-NN is a baseline method created by ourserlves whose implementation is provided in this GitHub repo as described in the "Script files" section.)
 
-## Script files 
+## Script files in this GitHub repo
+
 
