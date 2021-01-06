@@ -23,7 +23,7 @@ Rscript Convert2Tensor_ST.R --input <input_folder> --output <output_folder>
 Next, open MATLAB and `cd` to the `FIST_utils` folder, load the `.mat` file output by the `Rscript` command in the previous step, and run `V = sptensor([V.x_aligned_coords V.y_aligned_coords V.variable], V.value, [double(X) double(Y) double(Z)]);` to generate the data tensor.
 
 #### Step 2: Run cross-validations on the spot fibers or gene slices of the processed tensors
-- ** Spot-wise cross-validation on the 10 tissue tensors from 10x Genomics: ** 
+- **Spot-wise cross-validation on the 10 tissue tensors from 10x Genomics:** 
 
 #### Step 3: Plot the results
 
