@@ -20,10 +20,10 @@
 # can be downloaded with following links (replace "tissue-name" with one from above list)
 #
 #       filtered feature-barcode matrix data: 
-#       https://support.10xgenomics.com/spatial-gene-expression/datasets/<tissue-name>/<tissue-name>_filtered_feature_bc_matrix.tar.gz
+#       https://cf.10xgenomics.com/spatial-gene-expression/datasets/<tissue-name>/<tissue-name>_filtered_feature_bc_matrix.tar.gz
 #
 #       spatial coordinates:
-#       https://support.10xgenomics.com/spatial-gene-expression/datasets/<tissue-name>/<tissue-name>_spatial.tar.gz
+#       https://cf.10xgenomics.com/spatial-gene-expression/datasets/<tissue-name>/<tissue-name>_spatial.tar.gz
 #
 # You can also browse the webpage of each dataset and download "Feature / barcode matrix (filtered)" and
 # "Spatial imaging data" in the file list
