@@ -29,4 +29,7 @@ Next, open MATLAB and load the `.mat` file output by the `Rscript` command in th
 Run `plot_Figure2.m`, `plot_Figure3.m`, `plot_Figure4.m`, `plot_Figure8.m`, `plot_Figure9.m`, `plot_FigureS345.m` and `generate_S1_Table.m` to display the key results in the paper.
 
 
+## Reference
+[Li, Zhuliu, Tianci Song, Jeongsik Yong, and Rui Kuang. "Imputation of spatially-resolved transcriptomes by graph-regularized tensor completion." PLoS computational biology 17, no. 4 (2021): e1008218.](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008218)
+
 
