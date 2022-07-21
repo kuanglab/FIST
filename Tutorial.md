@@ -3,7 +3,7 @@
 This tutorial shows how to download a visium dataset and run FIST for the imputation.
 
 # Step 1: download FIST package
-Follow the step in [Preparation of the experiments](https://github.com/kuanglab/FIST/blob/master/README.md#preparation-for-the-experiments) to prepare all the data and the folders. Under the **`FIST_data`:** directory create two directory **`FIST_tutorial`**. 
+Follow the step in [Preparation of the experiments](https://github.com/kuanglab/FIST/blob/master/README.md#preparation-for-the-experiments) to prepare all the data and the folders. Under the directory **`FIST_data`** create a new directory **`FIST_tutorial`**. 
 
 # Step 2: download a Visium dataset.
 You can downloaded any Visium data (Space Ranger v1.0.0) to from [10x genomics website](https://support.10xgenomics.com/spatial-gene-expression/datasets/).
@@ -31,7 +31,7 @@ Create a folder **`FIST_Tutorial_Ouput`** under **`FIST_data`:**. Use the follow
 
 Rscript Convert2Tensor_Visium.R --input FIST_Tutorial --output FIST_Tutorial_Output
 
-After running the script, a matlab file V1_Human_Heart.mat and a gene list file V1_Human_Heart.csv will be generated. Then copy MUS_PPI.mat and HSA_PPI.mat from **`10x_data`:** into the folder **`FIST_Tutorial_Ouput`**.
+After running the script, a matlab file V1_Human_Heart.mat and a gene list file V1_Human_Heart.csv will be generated. Then copy MUS_PPI.mat and HSA_PPI.mat from **`10x_data`** into the folder **`FIST_Tutorial_Ouput`**.
 
 # Step 4: run FIST program
 open MATLAB and load V1_Human_Heart.mat file outputted by the Rscript command in the previous step, cd to the FIST_utils folder, run run_FIST.m. After the program completes, run V = sptensor([V.x_aligned_coords V.y_aligned_coords V.variable], V.value, [double(X) double(Y) double(Z)]); to generate the data tensor.
