@@ -5,6 +5,8 @@
 #
 #       https://support.10xgenomics.com/spatial-gene-expression/datasets/
 #
+# Under Visium Spatial for FFPE Demonstration (v1 Chemistry)/Visium Demonstration (v1 Chemistray)
+# choose tab "Space Ranger v1.0.0"
 # Available tissues on 10x genomics:
 #
 #       V1_Adult_Mouse_Brain                              V1_Breast_Cancer_Block_A_Section_1
@@ -23,6 +25,8 @@
 #       spatial coordinates:
 #       https://support.10xgenomics.com/spatial-gene-expression/datasets/<tissue-name>/<tissue-name>_spatial.tar.gz
 #
+# You can also browse the webpage of each dataset and download "Feature / barcode matrix (filtered)" and
+# "Spatial imaging data" in the file list
 # And then unzip the downloaded data and organize folders using the following structure:
 #
 #       . <data-folder>
