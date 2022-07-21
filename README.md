@@ -14,7 +14,7 @@ The folders (10x_data, Replicates_data, FIST_utils, FIST_res, SpatialNN_res, REM
 The cross-validation results for FIST are stored in `FIST_res`. The cross-validation results for the baseline methods [REMAP](https://github.com/hansaimlim/REMAP), [GWNMF](https://locus.siam.org/doi/pdf/10.1137/1.9781611972801.18), [ZIFA](https://github.com/epierson9/ZIFA) and Sptial-NN are stored in `REMAP_res`, `GWNMF_res`, `ZIFA_res` and `SpatialNN_res`. (Note: Spatial-NN is a baseline method created by ourselves, the implementation is provided in this GitHub repo.)
 
 ## Instructions to run cross-validation experiments
-#### Step 1: generate the tensor data from the raw data (skip this step if directly work on the processed tensor data)
+#### Step 1: generate the tensor data from the raw data (skip this step if directly work on the processed tensor data in the preparation step)
 Step-by-step instructions on how to convert the raw spatial transcriptomic datasets from [10x Genomics](https://support.10xgenomics.com/spatial-gene-expression/datasets/) and [Ståhl et al. (2016)](https://www.spatialresearch.org/resources-published-datasets/doi-10-1126science-aaf2403/) to tensors are provided in `Convert2Tensor_Visium.R` and `Convert2Tensor_ST.R` respectively.  To run these R scripts, you need to specify the paths to input and output folders by using "--input" and "--output" with Linux command line as follows:
 ```
 Rscript Convert2Tensor_Visium.R --input <input_folder> --output <output_folder>
