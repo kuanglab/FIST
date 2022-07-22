@@ -14,7 +14,7 @@ The folders (10x_data, Replicates_data, FIST_utils, FIST_res, SpatialNN_res, REM
 The cross-validation results for FIST are stored in `FIST_res`. The cross-validation results for the baseline methods [REMAP](https://github.com/hansaimlim/REMAP), [GWNMF](https://locus.siam.org/doi/pdf/10.1137/1.9781611972801.18), [ZIFA](https://github.com/epierson9/ZIFA) and Sptial-NN are stored in `REMAP_res`, `GWNMF_res`, `ZIFA_res` and `SpatialNN_res`. (Note: Spatial-NN is a baseline method created by ourselves, the implementation is provided in this GitHub repo.)
 
 ## Tutorial to run FIST on a Visium dataset
-# Step 1: download a Visium dataset.
+#### Step 1: download a Visium dataset.
 You can downloaded any Visium data (Space Ranger v1.0.0) to from [10x genomics website](https://support.10xgenomics.com/spatial-gene-expression/datasets/).
 In this tutorial, we will use a human heart dataset as an example. 
 
@@ -35,17 +35,17 @@ Then unzip the downloaded data and organize folders using the following structur
 
 (more about [filtered feature-barcode matrix data](https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/output/matrices) and [spatial coordinates](https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/output/images))
 
-# Step 2: convert the visium data file into tensor data for running FIST.
+#### Step 2: convert the visium data file into tensor data for running FIST.
 Create a folder **`FIST_Tutorial_Ouput`** under **`FIST_data`**. Use the following command line to run the R script for converting the data
 
 Rscript Convert2Tensor_Visium.R --input FIST_Tutorial --output FIST_Tutorial_Output
 
 After running the script, a matlab file V1_Human_Heart.mat and a gene list file V1_Human_Heart.csv will be generated in the folder **`FIST_Tutorial_Output`**.
 
-# Step 3: run FIST program
+#### Step 3: run FIST program
 Open the script run_FIST_Tutorial.m in matlab. Replace yourpath in the line "work_path = 'yourpath/FIST_data';" with the FIST installation directory. Then run the script. The imputed tensor will be saved in V1_Human_Heart_output.mat in the folder **`FIST_Tutorial_Output`**
 
-# Note: 
+### Note: 
 This tutorial only works for human and mouse visium data. To work with other species, you need to dowload PPI networks and prepare them in .mat format under the folder **`FIST_Tutorial_Output`** and change the code in data_prep_10x.m to read in the PPI.
 
 ## Instructions to run cross-validation experiments
