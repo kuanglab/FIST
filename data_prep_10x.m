@@ -2,12 +2,12 @@
 % V: data tensor 
 % W: spatial chain graphs and PPI network
 % rank_k: CPD rank
-function [V,W,rank_k] = data_prep_10x(dataName,PPIName data_path, utils_path)
+function [V,W,rank_k] = data_prep_10x(dataName,PPIName,data_path, utils_path)
 
 % load data tensor
-load([data_path,dataName,'_tensor.mat']); 
+load([data_path,dataName,'.mat']); 
 
-load([data_path,PPIName]);
+load([data_path,PPIName,'.mat']);
 
 % load gene ids
 genes = importdata([data_path,dataName,'_gene.csv']);
@@ -18,6 +18,9 @@ for i = 1:size(genes)
 end
 
 cd(utils_path);
+
+V = sptensor([V.x_aligned_coords V.y_aligned_coords V.variable], V.value, [double(X) double(Y) double(Z)]);
+
 vals = V.vals; 
 vals(vals==2) = 1; % set to zeros if UMI counts < 3 (this step can be ignored for high-quality data)
 V = sptensor(V.subs,log(vals),V.size); % log normalization
@@ -48,10 +51,10 @@ end
 % build PPI network
 W{3} = zeros(n(3),n(3));
 
-if exist HSA_BIOGRID 
+if exist('HSA_BIOGRID')==1 
     [ia,ib] = ismember(genes,HSA_UNIQ_BIOGRID_GENE);
     W{3}(ia,ia) = HSA_BIOGRID(ib(ib>0),ib(ib>0));           
-elseif exist MUS_BIOGRID
+elseif exist('MUS_BIOGRID')==1
     [ia,ib] = ismember(genes,MUS_GENE);
     W{3}(ia,ia) = MUS_BIOGRID(ib(ib>0),ib(ib>0));
 else
