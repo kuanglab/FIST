@@ -50,11 +50,8 @@ This tutorial only works for human and mouse visium data. To work with other spe
 
 ## Instructions to run cross-validation experiments
 #### Step 1: generate the tensor data from the raw data (skip this step if directly work on the processed tensor data in the preparation step)
-Step-by-step instructions on how to convert the raw spatial transcriptomic datasets from [10x Genomics](https://support.10xgenomics.com/spatial-gene-expression/datasets/) and [Ståhl et al. (2016)](https://www.spatialresearch.org/resources-published-datasets/doi-10-1126science-aaf2403/) to tensors are provided in `Convert2Tensor_Visium.R` and `Convert2Tensor_ST.R` respectively.  To run these R scripts, you need to specify the paths to input and output folders by using "--input" and "--output" with Linux command line as follows:
-```
-Rscript Convert2Tensor_Visium.R --input <input_folder> --output <output_folder>
-Rscript Convert2Tensor_ST.R --input <input_folder> --output <output_folder>  
-```
+The tensor data are already prepared by `Convert2Tensor_Visium.R` and `Convert2Tensor_ST.R` in the folder **`10x_data`**. 
+
 #### Step 2: Run cross-validations on the spot fibers or gene slices of the processed tensors
 Next, open MATLAB and load the `.mat` file provided in the preparation under **`10x_data`** folder or outputted by the `Rscript` command in the previous step, `cd` to the `FIST_utils` folder, and run `V = sptensor([V.x_aligned_coords V.y_aligned_coords V.variable], V.value, [double(X) double(Y) double(Z)]);` to generate the data tensor.
 
