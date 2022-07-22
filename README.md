@@ -41,7 +41,7 @@ Then unzip the downloaded data and organize folders using the following structur
 (more about [filtered feature-barcode matrix data](https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/output/matrices) and [spatial coordinates](https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/output/images))
 
 #### Step 2: convert the visium data file into tensor data for running FIST.
-Create a folder **`FIST_Tutorial_Ouput`** under **`FIST_data`**. Use the following command line to run the R script for converting the data
+Under folder **`FIST_data`**, use the following command line to run the R script for converting the data
 
 Rscript Convert2Tensor_Visium.R --input FIST_Tutorial --output FIST_Tutorial_Output
 
