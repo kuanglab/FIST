@@ -3,7 +3,7 @@
 This tutorial shows how to download a visium dataset and run FIST for the imputation.
 
 # Step 1: download FIST package
-Follow the step in [Preparation of the experiments](https://github.com/kuanglab/FIST/blob/master/README.md#preparation-for-the-experiments) to prepare all the data and the folders. Under the directory **`FIST_data`** create a new directory **`FIST_tutorial`**. 
+Follow the step in [Preparation of the experiments](https://github.com/kuanglab/FIST/blob/master/README.md#preparation-for-the-experiments) to prepare all the data and the folders. Under the directory **`FIST_data`** create a new directory **`FIST_Tutorial`**. 
 
 # Step 2: download a Visium dataset.
 You can downloaded any Visium data (Space Ranger v1.0.0) to from [10x genomics website](https://support.10xgenomics.com/spatial-gene-expression/datasets/).
@@ -15,7 +15,7 @@ We only use filtered feature-barcode matrix data and spatial coordindates provid
 
 Then unzip the downloaded data and organize folders using the following structure under a home-folder for your experiment:
 
-       . FIST_tutorial
+       . FIST_Tutorial
        ├── V1_Human_Heart
        │   ├── filtered_feature_bc_matrix
        │   │   ├── barcodes.tsv.gz
@@ -27,7 +27,7 @@ Then unzip the downloaded data and organize folders using the following structur
 (more about [filtered feature-barcode matrix data](https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/output/matrices) and [spatial coordinates](https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/output/images))
 
 # Step 3: convert the visium data file into tensor data for running FIST.
-Create a folder **`FIST_Tutorial_Ouput`** under **`FIST_data`:**. Use the following command line to run the R script for converting the data
+Create a folder **`FIST_Tutorial_Ouput`** under **`FIST_data`**. Use the following command line to run the R script for converting the data
 
 Rscript Convert2Tensor_Visium.R --input FIST_Tutorial --output FIST_Tutorial_Output
 
